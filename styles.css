@@ -1,0 +1,179 @@
+
+/* THE BREEDING BARN - ANIMAL SCIENCE 1B */
+
+:root {
+  --navy: #102a3a;
+  --rust: #872c21;
+  --gold: #c68b45;
+  --cream: #f7f4ed;
+  --pale: #f3ede2;
+  --text: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px 16px;
+  background: var(--pale);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(16, 42, 58, 0.12);
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  padding: 35px 25px;
+  text-align: center;
+  border-bottom: 6px solid var(--gold);
+}
+
+header small {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 20px;
+  margin: 0;
+  color: var(--cream);
+}
+
+#app {
+  padding: 30px;
+  min-height: 350px;
+}
+
+h2, h3 {
+  color: var(--navy);
+}
+
+.card {
+  background: var(--cream);
+  border: 1px solid #ded6c8;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+
+button {
+  background: var(--rust);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background: var(--navy);
+}
+
+button:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: white;
+  color: var(--navy);
+  border: 2px solid #ded6c8;
+  margin: 10px 0;
+}
+
+.option:hover {
+  border-color: var(--gold);
+  background: var(--cream);
+}
+
+.option.selected {
+  background: var(--pale);
+  border-color: var(--rust);
+}
+
+.feedback {
+  padding: 18px;
+  border-radius: 10px;
+  background: var(--pale);
+  border-left: 5px solid var(--gold);
+  margin: 18px 0;
+}
+
+.progress {
+  background: #e5e7eb;
+  border-radius: 20px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: var(--gold);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.stat {
+  display: inline-block;
+  background: var(--cream);
+  padding: 12px 18px;
+  margin: 6px;
+  border-radius: 8px;
+  border: 1px solid #ded6c8;
+}
+
+footer {
+  background: var(--rust);
+  color: white;
+  padding: 18px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 27px;
+  }
+
+  #app {
+    padding: 18px;
+  }
+
+  button {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
